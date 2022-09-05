@@ -50,7 +50,7 @@ let task = document.getElementById("tasks");
 
 for(const lista of listaDeTareas){
     let li = document.createElement("li");
-    li.innerHTML= lista;
+    li.innerHTML= `Tarea: ${lista.titulo} <br><br> Descripción: ${lista.descripcion} <br><br> `;
     task.appendChild(li);
 }
 
