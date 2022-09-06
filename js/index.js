@@ -5,6 +5,7 @@ console.log(hoy);
 let usuario = prompt(`Ingrese su nombre`); 
 let nuevaTarea;
 const listaDeTareas=[];
+let cuantasTareas = parseInt(prompt(`¿Cuántas tareas vas a realizar hoy?(Ingresa un número)`))
 
 // const saludar = () =>{ alert(`Bienvenido/a ${usuario} listo/a para organizar tu día?`)}
 
@@ -22,13 +23,11 @@ class Tarea{
 
 // saludar();
 
-for (let i=0; i<3;i++){
+for (let i=0; i<cuantasTareas;i++){
     listaDeTareas.push(ingresarTarea());
 }
 
-listaDeTareas.forEach( function(el){
-    console.log(el);
-})
+listaDeTareas.forEach (el => console.log(el));
 
 //creando un template string para el saludo
 let saludo = document.getElementById("saludo");
